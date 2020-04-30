@@ -1,7 +1,7 @@
 import pytest
 from calculadora import enquadramento_aliquota
 
-@pytest.mark.parametrize('salario,expected', [(1000, 'Isento')])
+@pytest.mark.parametrize('salario,expected', [(1000, 0)])
 def teste_enquadramento_01(salario, expected):
     assert enquadramento_aliquota(salario) == expected
 
